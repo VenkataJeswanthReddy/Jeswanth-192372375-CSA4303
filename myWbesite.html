@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Website</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Cambria, serif;
+            font-size: 14px;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        /* Scrolling Text */
+        .scroll-box {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 20px 0;
+        }
+
+        .scroll-text {
+            display: inline-block;
+            color: blue;
+            font-weight: bold;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            margin: 20px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 2px solid blue;
+            color: blue;
+            padding: 20px;
+        }
+
+        /* Blue Button */
+        .btn {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-family: Cambria, serif;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Website</h1>
+
+    <div class="scroll-box">
+        <div class="scroll-text">
+            Welcome! This is a simple website created using HTML and CSS.
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">Home</div>
+        <div class="grid-item">About</div>
+        <div class="grid-item">Services</div>
+        <div class="grid-item">Gallery</div>
+        <div class="grid-item">Contact</div>
+        <div class="grid-item">Help</div>
+    </div>
+
+    <button class="btn">Click Here</button>
+
+</body>
+</html>
