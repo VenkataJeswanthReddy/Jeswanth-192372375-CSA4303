@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition and Transform Demo</title>
+
+    <style>
+        body{
+            text-align:center;
+            background-color:lightblue;
+            font-family:Cambria;
+        }
+
+        .box{
+            width:150px;
+            height:150px;
+            background-color:blue;
+            color:white;
+            margin:50px auto;
+            line-height:150px;
+            font-size:20px;
+
+            /* Transition Property */
+            transition: all 0.5s ease;
+        }
+
+        /* Transform on Hover */
+        .box:hover{
+            transform: rotate(45deg) scale(1.2);
+            background-color:red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transition and Transform Example</h1>
+
+    <div class="box">
+        Hover Me
+    </div>
+
+</body>
+</html>
