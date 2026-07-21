@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animation Demo</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Cambria;
+        }
+
+        h1 {
+            color: navy;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: blue;
+            color: white;
+            line-height: 120px;
+            font-size: 18px;
+            margin: 100px auto;
+            border-radius: 10px;
+
+            /* Animation Properties */
+            animation-name: moveBox;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        /* Animation Definition */
+        @keyframes moveBox {
+            0% {
+                background-color: blue;
+                transform: translateX(0px);
+            }
+
+            25% {
+                background-color: green;
+                transform: translateX(150px);
+            }
+
+            50% {
+                background-color: orange;
+                transform: translateY(100px);
+            }
+
+            75% {
+                background-color: red;
+                transform: translateX(-150px);
+            }
+
+            100% {
+                background-color: blue;
+                transform: translateX(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation Example</h1>
+
+    <div class="box">
+        Moving Box
+    </div>
+
+</body>
+</html>
