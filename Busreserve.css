@@ -1,20 +1,20 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Cambria;
+    background: lightblue;
 }
 
 header {
-    background-color: #003366;
+    background: navy;
     color: white;
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: #0055aa;
+    background: royalblue;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 nav a {
@@ -22,19 +22,46 @@ nav a {
     text-decoration: none;
     margin: 15px;
     font-size: 18px;
+
+    /* Transition */
+    transition: 0.5s;
 }
 
 nav a:hover {
     color: yellow;
+
+    /* Transform */
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+/* Animation */
+.bus-container {
+    height: 100px;
+    overflow: hidden;
+}
+
+.bus {
+    font-size: 60px;
+    animation: moveBus 5s linear infinite;
+}
+
+@keyframes moveBus {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(100vw);
+    }
 }
 
 .container {
     width: 60%;
-    margin: 40px auto;
+    margin: 30px auto;
     background: white;
-    padding: 25px;
-    text-align: center;
+    padding: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 input {
@@ -44,21 +71,27 @@ input {
 }
 
 button {
-    background-color: green;
+    background: green;
     color: white;
     border: none;
     padding: 12px 20px;
     cursor: pointer;
+
+    /* Transition */
+    transition: 0.5s;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background: darkgreen;
+
+    /* Transform */
+    transform: scale(1.1) rotate(3deg);
 }
 
 footer {
-    background-color: #003366;
+    background: navy;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
